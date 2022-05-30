@@ -138,12 +138,17 @@ body {
 
 .header .shopping-cart{
     position: absolute;
-    top: 110%; right: 2rem;
+    top: 110%; right: -110%;
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     width: 30rem;
     background: #fff;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transform: .8s linear;
 }
 
 .header .shopping-cart .box{
